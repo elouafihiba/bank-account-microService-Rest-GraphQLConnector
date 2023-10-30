@@ -30,13 +30,24 @@ Travail à réaliser  :
 ![ms](./captures/7.png)
 
 6. Tester le web micro-service en utilisant un client REST comme Postman
+#### Liste des comptes
 ![ms](./captures/8.png)
 
+#### Afficher un compte by l'id
 ![ms](./captures/9.png)
 
+#### Modifier un compte avec Put
 ![ms](./captures/10.png)
 
 7. Générer et tester le documentation Swagger de des API Rest du Web service
+#### On ajoute la dependance "SpringDoc OpenAPI UI" dans pom.xml
+![ms](./captures/11.png)
+
+#### La documentation Swagger
+![ms](./captures/12.png)
+###### la docummentation sous forme Json : L'interface du WebService elle contient:les paths, input,outpu
+![ms](./captures/13.png)
+
 8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections
 9. Créer les DTOs et Mappers
 10. Créer la couche Service (métier) et du micro service
