@@ -45,11 +45,30 @@ Travail à réaliser  :
 
 #### La documentation Swagger
 ![ms](./captures/12.png)
-###### la docummentation sous forme Json : L'interface du WebService elle contient:les paths, input,outpu
+###### la docummentation sous forme Json : autrement dis c'est L'interface de notre api elle contient:les paths, input,outpu
 ![ms](./captures/13.png)
 
 8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections
+#### Télecharger l'independance Spring Data Rest
+Spring Data REST est une extension de Spring Data qui simplifie la création de 
+Web Services REST à partir de vos classes d'entités JPA (Java Persistence API) 
+et de vos référentiels Spring Data. Il permet de créer des points de terminaison
+REST automatiquement pour effectuer des opérations CRUD (Create, Read, Update,
+Delete) sur vos données.
+![ms](./captures/14.png)
+
+#### Accéder au localhost:8081/bankAccounts
+![ms](./captures/15.png)
+##### les projections
+![ms](./captures/16.png)
+
+![ms](./captures/18.png)
+
+![ms](./captures/17.png)
+
 9. Créer les DTOs et Mappers
+
+
 10. Créer la couche Service (métier) et du micro service
 11. Créer un Web service GraphQL pour ce Micro-service
 
