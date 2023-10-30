@@ -4,7 +4,7 @@
 ![ms](./captures/architecture.jpg)
 
 
-Ce Tp consiste à :
+Ce Tp consiste à  :
 
 1. Créer un projet Spring Boot avec les dépendances Web, Spring Data JPA, H2, Lombok
 2. Créer l'entité JPA Compte
