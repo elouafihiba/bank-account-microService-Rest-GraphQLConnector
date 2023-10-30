@@ -1,17 +1,41 @@
 # Développement d'un Micro-Service
 
+Ce Tp consiste à créer un micro service qui permet de gérer des comptes bancaires.
+
 ## Architecture:
 ![ms](./captures/architecture.jpg)
 
 
-Ce Tp consiste à  :
+Travail à réaliser  :
 
 1. Créer un projet Spring Boot avec les dépendances Web, Spring Data JPA, H2, Lombok
+
 2. Créer l'entité JPA Compte
+![ms](./captures/2.png)
+
 3. Créer l'interface CompteRepository basée sur Spring Data
+![ms](./captures/3.png)
+
 4. Tester la couche DAO
+#### Creation des comptes sur le fichier Aplication en utilisant le builder:
+![ms](./captures/4.png)
+
+#### Configuration de la DB sur le fichier properties:
+![ms](./captures/5.png)
+
+#### Resultat du test:
+![ms](./captures/6.png)
+
 5. Créer le Web service Restfull qui permet de gérer des comptes
+![ms](./captures/7.png)
+
 6. Tester le web micro-service en utilisant un client REST comme Postman
+![ms](./captures/8.png)
+
+![ms](./captures/9.png)
+
+![ms](./captures/10.png)
+
 7. Générer et tester le documentation Swagger de des API Rest du Web service
 8. Exposer une API Restful en utilisant Spring Data Rest en exploitant des projections
 9. Créer les DTOs et Mappers
