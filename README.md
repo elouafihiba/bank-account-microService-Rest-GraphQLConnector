@@ -62,13 +62,19 @@ Delete) sur vos données.
 ##### les projections
 ![ms](./captures/16.png)
 
-![ms](./captures/18.png)
-
 ![ms](./captures/17.png)
 
 9. Créer les DTOs et Mappers
+#### les DTOs
+![ms](./captures/19.png)
+![ms](./captures/20.png)
+#### les Mappers
+![ms](./captures/23.png)
 
 
 10. Créer la couche Service (métier) et du micro service
+![ms](./captures/21.png)
+![ms](./captures/22.png)
+
 11. Créer un Web service GraphQL pour ce Micro-service
 

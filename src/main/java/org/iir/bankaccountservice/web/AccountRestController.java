@@ -10,15 +10,18 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/api")
 public class AccountRestController {
     private BankAccountRepository bankAccountRepository;
-    public AccountRestController(BankAccountRepository bankAccountRepository) {
+    private AccountService accountService;
+    private AccountMapper accountMapper;
+    public AccountRestController(BankAccountRepository bankAccountRepository, AccountService accountService
+            , AccountMapper accountMapper) {
         this.bankAccountRepository = bankAccountRepository;
-
+        this.accountService = accountService;
+        this.accountMapper = accountMapper;
     }
     @GetMapping("/bankAccounts")
     public List<BankAccount> bankAccounts(){
@@ -31,9 +34,8 @@ public class AccountRestController {
 
     }
     @PostMapping("/bankAccounts")
-    public BankAccount save(@RequestBody BankAccount bankAccount){
-        if(bankAccount.getId()==null) bankAccount.setId(UUID.randomUUID().toString());
-        return bankAccountRepository.save(bankAccount);
+    public BankAccountResponseDTO save(@RequestBody BankAccountRequestDTO requestDTO){
+        return accountService.addAccount(requestDTO);
     }
     @PutMapping("/bankAccounts/{id}")
     public BankAccount update(@PathVariable String id, @RequestBody BankAccount bankAccount){
