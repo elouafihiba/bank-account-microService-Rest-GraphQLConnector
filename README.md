@@ -102,17 +102,21 @@ qui permet aux clients de demander uniquement les données dont ils ont besoin.
 ### On test les methodes du Controller:
 La liste des comptes on spécifiant les attribus qu'on veut afficher
 
-![ms](./captures/g7.png)
+![ms](./captures/g7.PNG)
+
 On cherche un compte by ID toujours on spécifiant les donnees qu'on a besoin
 
-![ms](./captures/g8.png)
+![ms](./captures/g8.PNG)
+
 Dans le cas d'un ID qui n'existe pas on reçoit une erreur d'où l'utilité d'ajouter un fichier d'exceptions
 
-![ms](./captures/g9.png)
+![ms](./captures/g9.PNG)
+
 Creation du fichier CustomDataFetcherExceptionResolver qui hérite de la classe 
 "DataFetcherExceptionResolverAdapter"
 
-![ms](./captures/g10.png)
+![ms](./captures/g10.PNG)
+
 le resultat de l'erreur :
 
 ![ms](./captures/g11.PNG)
