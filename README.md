@@ -65,16 +65,67 @@ Delete) sur vos données.
 ![ms](./captures/17.png)
 
 9. Créer les DTOs et Mappers
-#### les DTOs
+
+#### les DTOs:
+
 ![ms](./captures/19.png)
+
 ![ms](./captures/20.png)
-#### les Mappers
+
+#### les Mappers:
+
 ![ms](./captures/23.png)
 
 
 10. Créer la couche Service (métier) et du micro service
+
 ![ms](./captures/21.png)
+
 ![ms](./captures/22.png)
 
 11. Créer un Web service GraphQL pour ce Micro-service
+### Ajouter la dependance:
+
+![ms](./captures/g1.png)
+### Creer un Controller pour GrapghQl:
+
+![ms](./captures/g6.png)
+
+### Modifier le fichier application.properties:
+
+![ms](./captures/g3.png)
+### Creer un fichier Schema.grapghqls:
+Un fichier qui fait la description du service.GraphQL est un langage de requête pour les API
+qui permet aux clients de demander uniquement les données dont ils ont besoin.
+
+![ms](./captures/g5.png)
+### On test les methodes du Controller:
+La liste des comptes on spécifiant les attribus qu'on veut afficher
+
+![ms](./captures/g7.png)
+On cherche un compte by ID toujours on spécifiant les donnees qu'on a besoin
+
+![ms](./captures/g8.png)
+Dans le cas d'un ID qui n'existe pas on reçoit une erreur d'où l'utilité d'ajouter un fichier d'exceptions
+
+![ms](./captures/g9.png)
+Creation du fichier CustomDataFetcherExceptionResolver qui hérite de la classe 
+"DataFetcherExceptionResolverAdapter"
+
+![ms](./captures/g10.png)
+le resultat de l'erreur :
+
+![ms](./captures/g11.PNG)
+ok
+
+
+
+
+
+
+
+
+
+
+
 
