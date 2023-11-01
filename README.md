@@ -116,7 +116,7 @@ Creation du fichier CustomDataFetcherExceptionResolver qui hérite de la classe
 le resultat de l'erreur :
 
 ![ms](./captures/g11.PNG)
-ok
+
 
 
 
