@@ -8,4 +8,5 @@ import org.iir.bankaccountservice.enums.AccountType;
 public interface AccountService {
     public BankAccountResponseDTO addAccount(BankAccountRequestDTO bankAccountRequestDTO );
 
+    BankAccountResponseDTO updateAccount(String id, BankAccountRequestDTO bankAccountDTO);
 }

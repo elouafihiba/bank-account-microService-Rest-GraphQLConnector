@@ -95,8 +95,19 @@ Delete) sur vos données.
 
 ![ms](./captures/g3.png)
 ### Creer un fichier Schema.grapghqls:
-Un fichier qui fait la description du service.GraphQL est un langage de requête pour les API
-qui permet aux clients de demander uniquement les données dont ils ont besoin.
+- Un fichier qui fait la description du service.GraphQL est un langage de requête pour les API
+qui permet aux clients de demander uniquement les données dont ils ont
+besoin.
+- Dans GraphQL, les termes "query" et "mutation" sont deux types de 
+- requêtes que vous pouvez utiliser pour interagir avec un système de données via une API GraphQL
+##### --1------- Query  :
+elle est utilisée pour récupérer des données que le client souhaite recevoir 
+dont il a besoin, ni plus ni moins.
+
+##### --1------- Mutation  :
+elle  est utilisée pour effectuer des opérations de modification des données sur 
+telles que la création, la mise à jour ou la suppression de données.
+Comme les requêtes, les mutations sont également définies du côté du client.
 
 ![ms](./captures/g5.png)
 ### On test les methodes du Controller:
@@ -119,7 +130,35 @@ Creation du fichier CustomDataFetcherExceptionResolver qui hérite de la classe
 
 le resultat de l'erreur :
 
-![ms](./captures/g11.PNG)
+![ms](./captures/g11.PNG)  
+
+Pour les operation de modification on utilise mutation
+ex: une methode pour ajouter un compte
+##### fichier Schema.grapghqls:
+
+![ms](./captures/g12.PNG)  
+
+![ms](./captures/g13.PNG)  
+
+#### on ajoute la methode ds le controller:
+
+![ms](./captures/g14.PNG)
+apres l'ajout du compte
+
+![ms](./captures/g15.PNG) 
+
+![ms](./captures/g16.PNG)  
+
+en utilisant des parametres:
+![ms](./captures/g17.PNG)  
+
+
+
+
+
+
+
+
 
 
 
